@@ -1,16 +1,27 @@
-package programms;
-import java.util.*;
 /**
  * @author DigvijayBate
  *
  */
-public class Empwage {
+public class UcSeven {
+
 	/**
-	 * @check for checking employee is present or not
+	 * @param args
 	 */
-	public static void check(){
-		double IS_PRESENT = Math.floor(Math.random() * 10) % 2;
-		if(IS_PRESENT == 1) {
+	double IS_PRESENT = Math.floor(Math.random() * 10) % 2; //class variables
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		UcSeven obj = new UcSeven();
+		UcSeven(obj.IS_PRESENT);
+
+	}
+	/**
+	 * @class methos
+	 */
+	private static void  UcSeven(double iS_PRESENT2) {
+		// TODO Auto-generated method stub
+		double PRESENT =iS_PRESENT2 ;
+		if(PRESENT == 1) {
 			System.out.println("employee is present");
 			full_part(); //funtion calling
 		}
@@ -20,9 +31,6 @@ public class Empwage {
 		}	
 		
 	}
-	/**
-	 * @full_part for checking employee is fulltime or parttime
-	 */
 	public static void full_part() {
 		double IS_FULL_TIME = Math.floor(Math.random() * 10) % 2;
 		if(IS_FULL_TIME == 1) {
@@ -65,41 +73,7 @@ public class Empwage {
 			hrs+=8;
 			}
 	}
+	
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("welcome to employee wage computation");
-		check(); //function calling
-		Scanner sc = new Scanner(System.in);
-		int value=1;
-		System.out.println("enter the choice:-");
-		System.out.println("1. for to check employee present or not \n"
-				+ "2.for to check employee fulltime or parttime \n"
-				+ "3. for check employee wage");
-		value=sc.nextInt();
-		/**
-		 * @switch case to solve programme
-		 */
-		switch(value) {
-		  case 1:
-		    check();
-		    break;
-		  case 2:
-		    full_part();
-		    break;
-		  case 3:
-			  System.out.println("employee working hours");
-			  int hrs=sc.nextInt();
-			  System.out.println("employee is rate per hour");
-			  int rate=sc.nextInt();
-			  wageDaily(hrs, rate);
-			  break;
-		  default:
-			  System.out.println("invalid choice");
-		}
-		
-sc.close();
-	}
 
 }
-
