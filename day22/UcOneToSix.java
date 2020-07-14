@@ -1,10 +1,9 @@
-package programms;
-import java.util.*;
+
 /**
  * @author DigvijayBate
  *
  */
-public class Empwage {
+public class UcOneToSix {
 	/**
 	 * @check for checking employee is present or not
 	 */
@@ -70,36 +69,7 @@ public class Empwage {
 		// TODO Auto-generated method stub
 		System.out.println("welcome to employee wage computation");
 		check(); //function calling
-		Scanner sc = new Scanner(System.in);
-		int value=1;
-		System.out.println("enter the choice:-");
-		System.out.println("1. for to check employee present or not \n"
-				+ "2.for to check employee fulltime or parttime \n"
-				+ "3. for check employee wage");
-		value=sc.nextInt();
-		/**
-		 * @switch case to solve programme
-		 */
-		switch(value) {
-		  case 1:
-		    check();
-		    break;
-		  case 2:
-		    full_part();
-		    break;
-		  case 3:
-			  System.out.println("employee working hours");
-			  int hrs=sc.nextInt();
-			  System.out.println("employee is rate per hour");
-			  int rate=sc.nextInt();
-			  wageDaily(hrs, rate);
-			  break;
-		  default:
-			  System.out.println("invalid choice");
-		}
-		
-sc.close();
+		sc.close();
 	}
 
 }
-
