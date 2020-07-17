@@ -57,10 +57,10 @@ public class EmpWageComputationUc9{
 		EmpWageComputationUc9 apple = new EmpWageComputation("Apple", 20, 2, 10);
 		 EmpWageComputationUc9 microsoft = new EmpWageComputation("Microsoft", 20, 4, 10);
 		apple.computeEmpWage();
-		System.out.println(dmart);
+		System.out.println(apple);
 
 		microsoft.computeEmpWage();
-		System.out.println(relince);
+		System.out.println(microsoft);
 
 
 	}
